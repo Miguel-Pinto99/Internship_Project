@@ -1,0 +1,3 @@
+dotnet test --logger "trx;LogFileName=TestResults.trx" --logger "xunit;LogFileName=TestResults.xml" --results-directory ./BuildReports/UnitTests -p:CollectCoverage=true -e:CoverletOutput=BuildReports\Coverage\ -e:CoverletOutputFormat=cobertura -e:Exclude="[*]*.Migrations.*,[*]*.*Controller"
+reportgenerator "-reports:BuildReports\Coverage\coverage.cobertura.xml" "-targetdir:BuildReports\Coverage" -reporttypes:HTML;HTMLSummary
+start BuildReports\Coverage\index.htm
