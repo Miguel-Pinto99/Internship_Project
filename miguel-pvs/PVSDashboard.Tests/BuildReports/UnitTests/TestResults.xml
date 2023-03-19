@@ -1,0 +1,994 @@
+<assemblies timestamp="01/12/2023 09:46:12">
+  <assembly name="C:\Users\MPIN\source\repos\miguel-pvs\PVSDashboard.Tests\bin\Debug\net6.0\PVSDashboard.Tests.dll" run-date="2023-01-12" run-time="09:46:12" total="269" passed="268" failed="1" skipped="0" time="6.023" errors="0">
+    <errors />
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for Project1.Application.EventHandlers.DeleteTopicApplicationUserEventHandlerTests" time="0.005">
+      <test name="Handle should call PublishWorkPatternEventAsync on ApplicationUserRepository" type="Project1.Application.EventHandlers.DeleteTopicApplicationUserEventHandlerTests" method="HandleShouldCallPublishWorkPatternEventAsyncOnApplicationUserRepository_WhenCommandIsSet" time="0.0030003" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="Project1.Application.EventHandlers.DeleteTopicApplicationUserEventHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0018953" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="7" passed="7" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.Absent.Commands.CreateAbsent.CreateAbsentCommandValidatorTests" time="0.076">
+      <test name="Body when start time is empty should have error" type="PVSDashboard.Tests.Application.Absent.Commands.CreateAbsent.CreateAbsentCommandValidatorTests" method="StartTimeEmpty_ShouldHaveError" time="0.0601317" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when start time equal end time should have error" type="PVSDashboard.Tests.Application.Absent.Commands.CreateAbsent.CreateAbsentCommandValidatorTests" method="StartTimeEqualEndTime_ShouldNotHaveError" time="0.0008801" result="Pass">
+        <traits />
+      </test>
+      <test name="Body should have a child validator" type="PVSDashboard.Tests.Application.Absent.Commands.CreateAbsent.CreateAbsentCommandValidatorTests" method="Body_ShouldHaveChildValidator" time="0.0122147" result="Pass">
+        <traits />
+      </test>
+      <test name="UserId when two should not have error" type="PVSDashboard.Tests.Application.Absent.Commands.CreateAbsent.CreateAbsentCommandValidatorTests" method="UserId_WhenTwo_ShouldNotHaveError" time="0.0007721" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when start time higher than end time should have error" type="PVSDashboard.Tests.Application.Absent.Commands.CreateAbsent.CreateAbsentCommandValidatorTests" method="StartTimeHigherEndTime_ShouldNotHaveError" time="0.0005737" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when start time lower than end time should not have error" type="PVSDashboard.Tests.Application.Absent.Commands.CreateAbsent.CreateAbsentCommandValidatorTests" method="StartTimeLowerEndTime_ShouldNotHaveError" time="0.0006652" result="Pass">
+        <traits />
+      </test>
+      <test name="UserId when zero should have error" type="PVSDashboard.Tests.Application.Absent.Commands.CreateAbsent.CreateAbsentCommandValidatorTests" method="UserId_WhenZero_ShouldHaveError" time="0.0005028" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.Absent.Commands.CreateAbsent.CreateAbsentHandlerTests" time="0.006">
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.Absent.Commands.CreateAbsent.CreateAbsentHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0032087" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should call CreateAbsentAsync on AbsentRepository" type="PVSDashboard.Tests.Application.Absent.Commands.CreateAbsent.CreateAbsentHandlerTests" method="HandleShouldCallCreateAbsentAsyncOnAbsentRepository_WhenCommandIsSet" time="0.0030407" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.Absents.Commands.DeleteAbsent.DeleteAbsentCommandValidatorTests" time="0.002">
+      <test name="Id when empty should have error" type="PVSDashboard.Tests.Application.Absents.Commands.DeleteAbsent.DeleteAbsentCommandValidatorTests" method="UserId_WhenZero_ShouldHaveError" time="0.0019873" result="Pass">
+        <traits />
+      </test>
+      <test name="Id when guid should not have error" type="PVSDashboard.Tests.Application.Absents.Commands.DeleteAbsent.DeleteAbsentCommandValidatorTests" method="UserId_WhenTwo_ShouldNotHaveError" time="0.0004318" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.Absents.Commands.DeleteAbsent.DeleteAbsentHandlerTests" time="0.011">
+      <test name="Handle should call DeleteAbsentAsync on AbsentRepository" type="PVSDashboard.Tests.Application.Absents.Commands.DeleteAbsent.DeleteAbsentHandlerTests" method="HandleShouldCallDeleteAbsentAsyncOnAbsentRepository_WhenCommandIsSet" time="0.0074617" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.Absents.Commands.DeleteAbsent.DeleteAbsentHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0038407" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="7" passed="7" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.Absents.Commands.EditAbsent.EditAbsentCommandValidatorTests" time="0.009">
+      <test name="Body when start time equal end time should have error" type="PVSDashboard.Tests.Application.Absents.Commands.EditAbsent.EditAbsentCommandValidatorTests" method="StartTimeEqualEndTime_ShouldNotHaveError" time="0.0054066" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when start time is empty should have error" type="PVSDashboard.Tests.Application.Absents.Commands.EditAbsent.EditAbsentCommandValidatorTests" method="StartTimeEmpty_ShouldHaveError" time="0.0005998" result="Pass">
+        <traits />
+      </test>
+      <test name="Id when two should not have error" type="PVSDashboard.Tests.Application.Absents.Commands.EditAbsent.EditAbsentCommandValidatorTests" method="Id_WhenTwo_ShouldNotHaveError" time="0.0004966" result="Pass">
+        <traits />
+      </test>
+      <test name="Id when zero should have error" type="PVSDashboard.Tests.Application.Absents.Commands.EditAbsent.EditAbsentCommandValidatorTests" method="Id_WhenZero_ShouldHaveError" time="0.0004229" result="Pass">
+        <traits />
+      </test>
+      <test name="Body should have a child validator" type="PVSDashboard.Tests.Application.Absents.Commands.EditAbsent.EditAbsentCommandValidatorTests" method="Body_ShouldHaveChildValidator" time="0.0010376" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when start time lower than end time should not have error" type="PVSDashboard.Tests.Application.Absents.Commands.EditAbsent.EditAbsentCommandValidatorTests" method="StartTimeLowerEndTime_ShouldNotHaveError" time="0.0005132" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when start time higher than end time should have error" type="PVSDashboard.Tests.Application.Absents.Commands.EditAbsent.EditAbsentCommandValidatorTests" method="StartTimeHigherEndTime_ShouldNotHaveError" time="0.0004625" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.Absents.Commands.EditAbsent.EditAbsentHandlerTests" time="0.172">
+      <test name="Handle should call EditAbsentAsync on AbsentRepository" type="PVSDashboard.Tests.Application.Absents.Commands.EditAbsent.EditAbsentHandlerTests" method="HandleShouldCallEditAbsentAsyncOnAbsentRepository_WhenCommandIsSet" time="0.1671342" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.Absents.Commands.EditAbsent.EditAbsentHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0049009" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.Absents.Queries.GetAbsent.GetAbsentCommandValidatorTests" time="0.003">
+      <test name="Id when empty should have error" type="PVSDashboard.Tests.Application.Absents.Queries.GetAbsent.GetAbsentCommandValidatorTests" method="UserId_WhenZero_ShouldHaveError" time="0.0023690" result="Pass">
+        <traits />
+      </test>
+      <test name="Id when guid should not have error" type="PVSDashboard.Tests.Application.Absents.Queries.GetAbsent.GetAbsentCommandValidatorTests" method="UserId_WhenGuid_ShouldNotHaveError" time="0.0003852" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.Absents.Queries.GetAbsent.GetAbsentHandlerTests" time="0.004">
+      <test name="Handle should call GetAbsentAsync on AbsentRepository" type="PVSDashboard.Tests.Application.Absents.Queries.GetAbsent.GetAbsentHandlerTests" method="HandleShouldCallGetAbsentAsyncOnAbsentRepository_WhenCommandIsSet" time="0.0028587" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.Absents.Queries.GetAbsent.GetAbsentHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0016007" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.Absents.Queries.GetAllAbsent.GetAllAbsentCommandValidatorTests" time="0.022">
+      <test name="when create a command should not have error" type="PVSDashboard.Tests.Application.Absents.Queries.GetAllAbsent.GetAllAbsentCommandValidatorTests" method="UserId_WhenTwo_ShouldNotHaveError" time="0.0215068" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.Absents.Queries.GetAllAbsent.GetAllAbsentHandlerTests" time="0.006">
+      <test name="Handle should call GetAllAbsentAsync on AbsentRepository" type="PVSDashboard.Tests.Application.Absents.Queries.GetAllAbsent.GetAllAbsentHandlerTests" method="HandleShouldCallGetAllAbsentAsyncOnAbsentRepository_WhenCommandIsSet" time="0.0039249" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.Absents.Queries.GetAllAbsent.GetAllAbsentHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0025297" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.Absents.Queries.GetById.GetByIdCommandValidatorTests" time="0.080">
+      <test name="Id when Id is 2 should not have error" type="PVSDashboard.Tests.Application.Absents.Queries.GetById.GetByIdCommandValidatorTests" method="UserId_WhenTwo_ShouldNotHaveError" time="0.0359815" result="Pass">
+        <traits />
+      </test>
+      <test name="Id when empty should have error" type="PVSDashboard.Tests.Application.Absents.Queries.GetById.GetByIdCommandValidatorTests" method="UserId_WhenZero_ShouldHaveError" time="0.0435952" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.Absentss.Queries.GetById.GetByIdHandlerTests" time="0.006">
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.Absentss.Queries.GetById.GetByIdHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0030325" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should call GetByIdAsync on Repository" type="PVSDashboard.Tests.Application.Absentss.Queries.GetById.GetByIdHandlerTests" method="HandleShouldCallGetByIdAsyncOnRepository_WhenCommandIsSet" time="0.0030545" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.ApplicationUsers.Commands.CheckInApplicationUser.CheckInApplicationUserCommandValidatorTests" time="0.080">
+      <test name="UserId when two should not have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.CheckInApplicationUser.CheckInApplicationUserCommandValidatorTests" method="UserId_WhenTwo_ShouldNotHaveError" time="0.0358145" result="Pass">
+        <traits />
+      </test>
+      <test name="UserId when zero should have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.CheckInApplicationUser.CheckInApplicationUserCommandValidatorTests" method="UserId_WhenZero_ShouldHaveError" time="0.0437057" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.ApplicationUsers.Commands.CheckInApplicationUser.CheckInApplicationUserHandlerTests" time="0.169">
+      <test name="Handle should call CheckInApplicationUserAsync on ApplicationUserRepository" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.CheckInApplicationUser.CheckInApplicationUserHandlerTests" method="HandleShouldCallCheckInApplicationUserAsyncOnApplicationUserRepository_WhenCommandIsSet" time="0.1670837" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.CheckInApplicationUser.CheckInApplicationUserHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0023595" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.ApplicationUsers.Commands.CheckOutApplicationUser.CheckOutApplicationUserCommandValidatorTests" time="0.003">
+      <test name="UserId when two should not have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.CheckOutApplicationUser.CheckOutApplicationUserCommandValidatorTests" method="UserId_WhenTwo_ShouldNotHaveError" time="0.0022824" result="Pass">
+        <traits />
+      </test>
+      <test name="UserId when zero should have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.CheckOutApplicationUser.CheckOutApplicationUserCommandValidatorTests" method="UserId_WhenZero_ShouldHaveError" time="0.0005368" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.ApplicationUsers.Commands.CheckOutApplicationUser.CheckOutApplicationUserHandlerTests" time="0.087">
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.CheckOutApplicationUser.CheckOutApplicationUserHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0633045" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should call CheckOutApplicationUserAsync on ApplicationUserRepository" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.CheckOutApplicationUser.CheckOutApplicationUserHandlerTests" method="HandleShouldCallCheckOutApplicationUserAsyncOnApplicationUserRepository_WhenCommandIsSet" time="0.0240092" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="6" passed="6" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.ApplicationUsers.Commands.CreateApplicationUser.CreateApplicationUserCommandValidatorTests" time="0.011">
+      <test name="Body should have a child validator" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.CreateApplicationUser.CreateApplicationUserCommandValidatorTests" method="Body_ShouldHaveChildValidator" time="0.0051409" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when office location is lower than zero should have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.CreateApplicationUser.CreateApplicationUserCommandValidatorTests" method="OfficeLocationIsZero_ShouldHaveError" time="0.0026365" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when name is null should have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.CreateApplicationUser.CreateApplicationUserCommandValidatorTests" method="NameIsNull_ShouldHaveError" time="0.0020308" result="Pass">
+        <traits />
+      </test>
+      <test name="UserId when zero should have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.CreateApplicationUser.CreateApplicationUserCommandValidatorTests" method="UserId_WhenZero_ShouldHaveError" time="0.0005254" result="Pass">
+        <traits />
+      </test>
+      <test name="UserId when two should not have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.CreateApplicationUser.CreateApplicationUserCommandValidatorTests" method="UserId_WhenTwo_ShouldNotHaveError" time="0.0004885" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when name is empty should have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.CreateApplicationUser.CreateApplicationUserCommandValidatorTests" method="NameIsEmpty_ShouldHaveError" time="0.0004404" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.ApplicationUsers.Commands.CreateApplicationUser.CreatreApplicationUserTests" time="0.009">
+      <test name="Handle should call AbsentLogicEventAsync on ApplicationUserRepository" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.CreateApplicationUser.CreatreApplicationUserTests" method="HandleShouldCallAbsentLogicEventAsyncOnApplicationUserRepository_WhenCommandIsSet" time="0.0070353" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.CreateApplicationUser.CreatreApplicationUserTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0017761" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.ApplicationUsers.Commands.DeleteApplicationUser.DeleteApplicationUserCommandValidatorTests" time="0.002">
+      <test name="UserId when zero should have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.DeleteApplicationUser.DeleteApplicationUserCommandValidatorTests" method="UserId_WhenZero_ShouldHaveError" time="0.0013439" result="Pass">
+        <traits />
+      </test>
+      <test name="UserId when two should not have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.DeleteApplicationUser.DeleteApplicationUserCommandValidatorTests" method="UserId_WhenTwo_ShouldNotHaveError" time="0.0002337" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.ApplicationUsers.Commands.DeleteApplicationUser.DeleteApplicationUserHandlerTests" time="0.026">
+      <test name="Handle should call DeleteApplicationUserAsync on ApplicationUserRepository" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.DeleteApplicationUser.DeleteApplicationUserHandlerTests" method="HandleShouldCallDeleteApplicationUserAsyncOnApplicationUserRepository_WhenCommandIsSet" time="0.0229755" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.DeleteApplicationUser.DeleteApplicationUserHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0028806" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="6" passed="6" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.ApplicationUsers.Commands.EditApplicationUser.EditApplicationUserCommandValidatorTests" time="0.012">
+      <test name="Body when name is empty should have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.EditApplicationUser.EditApplicationUserCommandValidatorTests" method="NameIsEmpty_ShouldHaveError" time="0.0080503" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when name is null should have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.EditApplicationUser.EditApplicationUserCommandValidatorTests" method="NameIsNull_ShouldHaveError" time="0.0007046" result="Pass">
+        <traits />
+      </test>
+      <test name="UserId when zero should have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.EditApplicationUser.EditApplicationUserCommandValidatorTests" method="UserId_WhenZero_ShouldHaveError" time="0.0005689" result="Pass">
+        <traits />
+      </test>
+      <test name="UserId when two should not have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.EditApplicationUser.EditApplicationUserCommandValidatorTests" method="UserId_WhenTwo_ShouldNotHaveError" time="0.0004525" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when office location is lower than zero should have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.EditApplicationUser.EditApplicationUserCommandValidatorTests" method="OfficeLocationIsZero_ShouldHaveError" time="0.0008324" result="Pass">
+        <traits />
+      </test>
+      <test name="Body should have a child validator" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.EditApplicationUser.EditApplicationUserCommandValidatorTests" method="Body_ShouldHaveChildValidator" time="0.0012248" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.ApplicationUsers.Commands.EditApplicationUser.EditApplicationUserHandlerTests" time="0.007">
+      <test name="Handle should call EditApplicationUserAsync on ApplicationUserRepository" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.EditApplicationUser.EditApplicationUserHandlerTests" method="HandleShouldCallEditApplicationUserAsyncOnApplicationUserRepository_WhenCommandIsSet" time="0.0049010" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.ApplicationUsers.Commands.EditApplicationUser.EditApplicationUserHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0023397" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetAllApplicationUser.GetAllApplicationUsersCommandValidatorTests" time="0.001">
+      <test name="when create a command should not have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetAllApplicationUser.GetAllApplicationUsersCommandValidatorTests" method="Command_WhenCreated_ShouldNotHaveError" time="0.0008255" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetAllApplicationUser.GetAllApplicationUsersHandlerTests" time="0.006">
+      <test name="Handle should call GetAllApplicationUserAsync on AllApplicationUserRepository" type="PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetAllApplicationUser.GetAllApplicationUsersHandlerTests" method="HandleShouldCallGetAllApplicationUserAsyncOnAllApplicationUserRepository_WhenCommandIsSet" time="0.0033305" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetAllApplicationUser.GetAllApplicationUsersHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0024350" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetAllLocation.GetAllLocationsCommandValidatorTests" time="0.001">
+      <test name="when create a command should not have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetAllLocation.GetAllLocationsCommandValidatorTests" method="Command_WhenCreated_ShouldNotHaveError" time="0.0007725" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetAllLocation.GetAllLocationsHandlerTests" time="0.004">
+      <test name="Handle should call GetAllLocationAsync on AllLocationRepository" type="PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetAllLocation.GetAllLocationsHandlerTests" method="HandleShouldCallGetAllLocationAsyncOnAllLocationRepository_WhenCommandIsSet" time="0.0026838" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetAllLocation.GetAllLocationsHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0016049" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetApplicationUser.GetApplicationUserCommandValidatorTests" time="0.002">
+      <test name="Id when empty should have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetApplicationUser.GetApplicationUserCommandValidatorTests" method="UserId_WhenZero_ShouldHaveError" time="0.0015885" result="Pass">
+        <traits />
+      </test>
+      <test name="Id when guid should not have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetApplicationUser.GetApplicationUserCommandValidatorTests" method="UserId_WhenTwo_ShouldNotHaveError" time="0.0002373" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetApplicationUser.GetApplicationUserHandlerTests" time="0.007">
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetApplicationUser.GetApplicationUserHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0036924" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should call GetApplicationUserAsync on ApplicationUserRepository" type="PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetApplicationUser.GetApplicationUserHandlerTests" method="HandleShouldCallGetApplicationUserAsyncOnApplicationUserRepository_WhenCommandIsSet" time="0.0028342" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetLocation.GetLocationCommandValidatorTests" time="0.002">
+      <test name="Id when is two should not have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetLocation.GetLocationCommandValidatorTests" method="UserId_WhenTwo_ShouldNotHaveError" time="0.0015140" result="Pass">
+        <traits />
+      </test>
+      <test name="Id when is zero should not have error" type="PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetLocation.GetLocationCommandValidatorTests" method="UserId_WhenZero_ShouldNotHaveError" time="0.0002449" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetLocation.GetLocationHandlerTests" time="0.006">
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetLocation.GetLocationHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0029598" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should call GetLocationAsync on LocationRepository" type="PVSDashboard.Tests.Application.ApplicationUsers.Queries.GetLocation.GetLocationHandlerTests" method="HandleShouldCallGetLocationAsyncOnLocationRepository_WhenCommandIsSet" time="0.0027986" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="1" failed="1" skipped="0" name="Test collection for PVSDashboard.Tests.Application.EventHandlers.AbsentLogicEventHandlers.AbsentLogicEventHandlerTests" time="0.015">
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.EventHandlers.AbsentLogicEventHandlers.AbsentLogicEventHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0035601" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should call AbsentLogicEventAsync on ApplicationUserRepository" type="PVSDashboard.Tests.Application.EventHandlers.AbsentLogicEventHandlers.AbsentLogicEventHandlerTests" method="HandleShouldCallAbsentLogicEventAsyncOnApplicationUserRepository_WhenCommandIsSet" time="0.0117160" result="Fail">
+        <failure>
+          <message>Moq.MockException : ITimerService.RemoveAbsentsAsync([Absent], CancellationToken) invocation failed with mock behavior Strict.
+All invocations on the mock must have a corresponding setup.</message>
+          <stack-trace>   at Moq.FailForStrictMock.Handle(Invocation invocation, Mock mock) in C:\projects\moq4\src\Moq\Interception\InterceptionAspects.cs:line 182
+   at Moq.Mock.Moq.IInterceptor.Intercept(Invocation invocation) in C:\projects\moq4\src\Moq\Interception\Mock.cs:line 27
+   at Moq.CastleProxyFactory.Interceptor.Intercept(IInvocation underlying) in C:\projects\moq4\src\Moq\Interception\CastleProxyFactory.cs:line 107
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ITimerServiceProxy.RemoveAbsentsAsync(List`1 listAllAbsentss, CancellationToken cancellationToken)
+   at Project1.Application.EventHandlers.AbsentLogic.AbsentLogicEventHandler.Handle(AbsentLogicEvent notification, CancellationToken cancellationToken) in C:\Users\MPIN\source\repos\miguel-pvs\Project1\Application\EventHandlers\AbsentLogic\AbsentLogicEventHandler.cs:line 42
+   at PVSDashboard.Tests.Application.EventHandlers.AbsentLogicEventHandlers.AbsentLogicEventHandlerTests.HandleShouldCallAbsentLogicEventAsyncOnApplicationUserRepository_WhenCommandIsSet() in C:\Users\MPIN\source\repos\miguel-pvs\PVSDashboard.Tests\Application\EventHandlers\AbsentLogicEventHandlers\AbsentLogicEventHandlerTests.cs:line 118
+--- End of stack trace from previous location ---</stack-trace>
+        </failure>
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.EventHandlers.CreateApplicationUserUnsLogicEventHandlers.CreateApplicationUserUnsLogicEventHandlerTests" time="0.015">
+      <test name="Handle should call CreateApplicationUserUnsLogicEventAsync on ApplicationUserRepository" type="PVSDashboard.Tests.Application.EventHandlers.CreateApplicationUserUnsLogicEventHandlers.CreateApplicationUserUnsLogicEventHandlerTests" method="HandleShouldCallCreateApplicationUserUnsLogicEventAsyncOnApplicationUserRepository_WhenCommandIsSet" time="0.0127749" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.EventHandlers.CreateApplicationUserUnsLogicEventHandlers.CreateApplicationUserUnsLogicEventHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0021650" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.EventHandlers.UnsEventHandlers.PublishCheckInEventHandlerTests" time="0.007">
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.EventHandlers.UnsEventHandlers.PublishCheckInEventHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0031534" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should call PublishWorkPatternEventAsync on ApplicationUserRepository" type="PVSDashboard.Tests.Application.EventHandlers.UnsEventHandlers.PublishCheckInEventHandlerTests" method="HandleShouldCallPublishWorkPatternEventAsyncOnApplicationUserRepository_WhenCommandIsSet" time="0.0039290" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.EventHandlers.UnsEventHandlers.PublishLocationEventHandlerTests" time="0.011">
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.EventHandlers.UnsEventHandlers.PublishLocationEventHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0080724" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should call PublishWorkPatternEventAsync on ApplicationUserRepository" type="PVSDashboard.Tests.Application.EventHandlers.UnsEventHandlers.PublishLocationEventHandlerTests" method="HandleShouldCallPublishWorkPatternEventAsyncOnApplicationUserRepository_WhenCommandIsSet" time="0.0031353" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.EventHandlers.UnsEventHandlers.PublishWorkPatternEventHandlerTests" time="0.005">
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.EventHandlers.UnsEventHandlers.PublishWorkPatternEventHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0025430" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should call PublishWorkPatternEventAsync on ApplicationUserRepository" type="PVSDashboard.Tests.Application.EventHandlers.UnsEventHandlers.PublishWorkPatternEventHandlerTests" method="HandleShouldCallPublishWorkPatternEventAsyncOnApplicationUserRepository_WhenCommandIsSet" time="0.0022388" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.EventHandlers.UnsEventHandlers.RemoveTimerEventHandlerEventHandler" time="0.006">
+      <test name="Handle should call RemoveTimerEventAsync on TimerService" type="PVSDashboard.Tests.Application.EventHandlers.UnsEventHandlers.RemoveTimerEventHandlerEventHandler" method="HandleShouldCallRemoveTimerEventAsyncOnTimerService_WhenCommandIsSet" time="0.0039826" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.EventHandlers.UnsEventHandlers.RemoveTimerEventHandlerEventHandler" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0023212" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.EventHandlers.UnsEventHandlers.StopTimerEventHandlerEventHandler" time="0.006">
+      <test name="Handle should call StopTimerEventAsync on TimerService" type="PVSDashboard.Tests.Application.EventHandlers.UnsEventHandlers.StopTimerEventHandlerEventHandler" method="HandleShouldCallStopTimerEventAsyncOnTimerService_WhenCommandIsSet" time="0.0037041" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.EventHandlers.UnsEventHandlers.StopTimerEventHandlerEventHandler" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0020601" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.EventHandlers.UnsEventHandlers.UpdateTimerEventHandlerEventHandler" time="0.010">
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.EventHandlers.UnsEventHandlers.UpdateTimerEventHandlerEventHandler" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0063728" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should call UpdateTimerEventAsync on TimerService" type="PVSDashboard.Tests.Application.EventHandlers.UnsEventHandlers.UpdateTimerEventHandlerEventHandler" method="HandleShouldCallUpdateTimerEventAsyncOnTimerService_WhenCommandIsSet" time="0.0032372" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.EventHandlers.UnsLogicEventHandlers.CreateWorkPatternUnsLogicEventHandlerTests" time="0.009">
+      <test name="Handle should call CreateWorkPatternUnsLogicEventAsync on WorkPatternRepository" type="PVSDashboard.Tests.Application.EventHandlers.UnsLogicEventHandlers.CreateWorkPatternUnsLogicEventHandlerTests" method="HandleShouldCallCreateWorkPatternUnsLogicEventAsyncOnWorkPatternRepository_WhenCommandIsSet" time="0.0065982" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.EventHandlers.UnsLogicEventHandlers.CreateWorkPatternUnsLogicEventHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0022161" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.EventHandlers.UnsLogicEventHandlers.DeleteApplicationUserUnsLogicEventHandlerTests" time="0.007">
+      <test name="Handle should call DeleteWorkPatternUnsLogicEventAsync on WorkPatternRepository" type="PVSDashboard.Tests.Application.EventHandlers.UnsLogicEventHandlers.DeleteApplicationUserUnsLogicEventHandlerTests" method="HandleShouldCallDeleteWorkPatternUnsLogicEventAsyncOnWorkPatternRepository_WhenCommandIsSet" time="0.0050046" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.EventHandlers.UnsLogicEventHandlers.DeleteApplicationUserUnsLogicEventHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0020642" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.EventHandlers.UnsLogicEventHandlers.DeleteWorkPatternUnsLogicEventHandlerTests" time="0.168">
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.EventHandlers.UnsLogicEventHandlers.DeleteWorkPatternUnsLogicEventHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.1434091" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should call DeleteWorkPatternUnsLogicEventAsync on WorkPatternRepository" type="PVSDashboard.Tests.Application.EventHandlers.UnsLogicEventHandlers.DeleteWorkPatternUnsLogicEventHandlerTests" method="HandleShouldCallDeleteWorkPatternUnsLogicEventAsyncOnWorkPatternRepository_WhenCommandIsSet" time="0.0242191" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.EventHandlers.UnsLogicEventHandlers.EditApplicationUserUnsLogicEventHandlerTests" time="0.024">
+      <test name="Handle should call EditApplicationUserLogicEventAsync on ApplicationUserRepository" type="PVSDashboard.Tests.Application.EventHandlers.UnsLogicEventHandlers.EditApplicationUserUnsLogicEventHandlerTests" method="HandleShouldCallEditApplicationUserLogicEventAsyncOnApplicationUserRepository_WhenCommandIsSet" time="0.0211723" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.EventHandlers.UnsLogicEventHandlers.EditApplicationUserUnsLogicEventHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0024043" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.EventHandlers.UnsLogicEventHandlers.EditWorkPatternUnsLogicEventHandlerTests" time="0.086">
+      <test name="Handle should call EditWorkPatternUnsLogicEventAsync on WorkPatternRepository" type="PVSDashboard.Tests.Application.EventHandlers.UnsLogicEventHandlers.EditWorkPatternUnsLogicEventHandlerTests" method="HandleShouldCallEditWorkPatternUnsLogicEventAsyncOnWorkPatternRepository_WhenCommandIsSet" time="0.0835668" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.EventHandlers.UnsLogicEventHandlers.EditWorkPatternUnsLogicEventHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0019635" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.WorkPatterns.Commands.CreateWorkPattern.CreateWorkPatternCommandBodyValidatorTests" time="0.002">
+      <test name="Body when StartTimePart is higher than EndTimePart should have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.CreateWorkPattern.CreateWorkPatternCommandBodyValidatorTests" method="StartTimeHigherThanEndTime_ShouldHaveError" time="0.0006440" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when EndTimePart is higher than 24h should have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.CreateWorkPattern.CreateWorkPatternCommandBodyValidatorTests" method="EndTimeHigherThan24h_ShouldHaveError" time="0.0004122" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when StartTimePart is lower than EndTimePart should have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.CreateWorkPattern.CreateWorkPatternCommandBodyValidatorTests" method="StartTimeLowerThanEndTime_ShouldHaveError" time="0.0004254" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when EndTimePart is higher than 24h should have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.CreateWorkPattern.CreateWorkPatternCommandBodyValidatorTests" method="DayIsEmpty_ShouldHaveError" time="0.0004076" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="7" passed="7" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.WorkPatterns.Commands.CreateWorkPattern.CreateWorkPatternCommandValidatorTests" time="0.010">
+      <test name="Body should have a child validator" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.CreateWorkPattern.CreateWorkPatternCommandValidatorTests" method="Body_ShouldHaveChildValidator" time="0.0051188" result="Pass">
+        <traits />
+      </test>
+      <test name="UserId when two should not have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.CreateWorkPattern.CreateWorkPatternCommandValidatorTests" method="UserId_WhenTwo_ShouldNotHaveError" time="0.0014490" result="Pass">
+        <traits />
+      </test>
+      <test name="UserId when zero should have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.CreateWorkPattern.CreateWorkPatternCommandValidatorTests" method="UserId_WhenZero_ShouldHaveError" time="0.0004157" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when StartDate is empty should have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.CreateWorkPattern.CreateWorkPatternCommandValidatorTests" method="StartDateIsEmpty_ShouldHaveError" time="0.0010851" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when StartDate is lower than Endate should not have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.CreateWorkPattern.CreateWorkPatternCommandValidatorTests" method="StartDateLowerThanEndDate_ShouldNotHaveError" time="0.0007101" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when list of parts is empty should have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.CreateWorkPattern.CreateWorkPatternCommandValidatorTests" method="ListPartsIsNull_ShouldHaveError" time="0.0006551" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when StartDate is higher than Endate should not have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.CreateWorkPattern.CreateWorkPatternCommandValidatorTests" method="StartDateHigherThanEndDate_ShouldHaveError" time="0.0005511" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.WorkPatterns.Commands.CreateWorkPattern.CreateWorkPatternHandlerTests" time="0.008">
+      <test name="Handle should call CreateWorkPatternAsync on WorkPatternRepository" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.CreateWorkPattern.CreateWorkPatternHandlerTests" method="HandleShouldCallCreateWorkPatternAsyncOnWorkPatternRepository_WhenCommandIsSet" time="0.0051045" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.CreateWorkPattern.CreateWorkPatternHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0024740" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.WorkPatterns.Commands.DeleteWorkPattern.DeleteWorkPatternCommandValidatorTests" time="0.030">
+      <test name="UserId when zero should have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.DeleteWorkPattern.DeleteWorkPatternCommandValidatorTests" method="UserId_WhenZero_ShouldHaveError" time="0.0295639" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.WorkPatterns.Commands.DeleteWorkPattern.DeleteWorkPatternHandlerTests" time="0.008">
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.DeleteWorkPattern.DeleteWorkPatternHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0033740" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should call DeleteWorkPatternAsync on WorkPatternRepository" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.DeleteWorkPattern.DeleteWorkPatternHandlerTests" method="HandleShouldCallDeleteWorkPatternAsyncOnWorkPatternRepository_WhenCommandIsSet" time="0.0043505" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.WorkPatterns.Commands.EditWorkPattern.EditWorkPatternCommandBodyValidatorTests" time="0.046">
+      <test name="Body when StartTimePart is lower than EndTimePart should have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.EditWorkPattern.EditWorkPatternCommandBodyValidatorTests" method="StartTimeLowerThanEndTime_ShouldHaveError" time="0.0283041" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when StartTimePart is higher than EndTimePart should have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.EditWorkPattern.EditWorkPatternCommandBodyValidatorTests" method="StartTimeHigherThanEndTime_ShouldHaveError" time="0.0008842" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when EndTimePart is higher than 24h should have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.EditWorkPattern.EditWorkPatternCommandBodyValidatorTests" method="EndTimeHigherThan24h_ShouldHaveError" time="0.0005622" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when EndTimePart is higher than 24h should have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.EditWorkPattern.EditWorkPatternCommandBodyValidatorTests" method="DayIsEmpty_ShouldHaveError" time="0.0157634" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="7" passed="7" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.WorkPatterns.Commands.EditWorkPattern.EditWorkPatternCommandValidatorTests" time="0.062">
+      <test name="Body when list of parts is empty should have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.EditWorkPattern.EditWorkPatternCommandValidatorTests" method="ListPartsIsNull_ShouldHaveError" time="0.0590051" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when StartDate is empty should have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.EditWorkPattern.EditWorkPatternCommandValidatorTests" method="StartDateIsEmpty_ShouldHaveError" time="0.0007002" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when StartDate is higher than Endate should not have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.EditWorkPattern.EditWorkPatternCommandValidatorTests" method="StartDateHigherThanEndDate_ShouldHaveError" time="0.0004717" result="Pass">
+        <traits />
+      </test>
+      <test name="Body should have a child validator" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.EditWorkPattern.EditWorkPatternCommandValidatorTests" method="Body_ShouldHaveChildValidator" time="0.0007188" result="Pass">
+        <traits />
+      </test>
+      <test name="Body when StartDate is lower than Endate should not have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.EditWorkPattern.EditWorkPatternCommandValidatorTests" method="StartDateLowerThanEndDate_ShouldNotHaveError" time="0.0006202" result="Pass">
+        <traits />
+      </test>
+      <test name="UserId when two should not have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.EditWorkPattern.EditWorkPatternCommandValidatorTests" method="UserId_WhenTwo_ShouldNotHaveError" time="0.0004578" result="Pass">
+        <traits />
+      </test>
+      <test name="UserId when zero should have error" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.EditWorkPattern.EditWorkPatternCommandValidatorTests" method="UserId_WhenZero_ShouldHaveError" time="0.0003828" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.WorkPatterns.Commands.EditWorkPattern.EditWorkPatternHandlerTests" time="0.013">
+      <test name="Handle should call UpdateWorkPatternAsync on WorkPatternRepository" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.EditWorkPattern.EditWorkPatternHandlerTests" method="HandleShouldCallEditWorkPatternAsyncOnWorkPatternRepository_WhenCommandIsSet" time="0.0112379" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.WorkPatterns.Commands.EditWorkPattern.EditWorkPatternHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0017649" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.WorkPatterns.Queries.GetAllWorkPattern.GetAllWorkPatternCommandValidatorTests" time="0.001">
+      <test name="when create a command should not have error" type="PVSDashboard.Tests.Application.WorkPatterns.Queries.GetAllWorkPattern.GetAllWorkPatternCommandValidatorTests" method="Command_WhenCreated_ShouldNotHaveError" time="0.0010309" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.WorkPatterns.Queries.GetAllWorkPattern.GetAllWorkPatternHandlerTests" time="0.005">
+      <test name="Handle should call GetAllWorkPatternAsync on WorkPatternRepository" type="PVSDashboard.Tests.Application.WorkPatterns.Queries.GetAllWorkPattern.GetAllWorkPatternHandlerTests" method="HandleShouldCallGetAllWorkPatternAsyncOnWorkPatternRepository_WhenCommandIsSet" time="0.0030204" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.WorkPatterns.Queries.GetAllWorkPattern.GetAllWorkPatternHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0023415" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.WorkPatterns.Queries.GetWorkPattern.GetWorkPatternCommandValidatorTests" time="0.002">
+      <test name="Id when empty should have error" type="PVSDashboard.Tests.Application.WorkPatterns.Queries.GetWorkPattern.GetWorkPatternCommandValidatorTests" method="UserId_WhenZero_ShouldHaveError" time="0.0014101" result="Pass">
+        <traits />
+      </test>
+      <test name="Id when guid should not have error" type="PVSDashboard.Tests.Application.WorkPatterns.Queries.GetWorkPattern.GetWorkPatternCommandValidatorTests" method="UserId_WhenTwo_ShouldNotHaveError" time="0.0003027" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Application.WorkPatterns.Queries.GetWorkPattern.GetWorkPatternHandlerTests" time="0.007">
+      <test name="Handle should call GetWorkPatternAsync on WorkPatternRepository" type="PVSDashboard.Tests.Application.WorkPatterns.Queries.GetWorkPattern.GetWorkPatternHandlerTests" method="HandleShouldCallGetWorkPatternAsyncOnWorkPatternRepository_WhenCommandIsSet" time="0.0042707" result="Pass">
+        <traits />
+      </test>
+      <test name="Handle should throw ArgumentNullException when command is not set" type="PVSDashboard.Tests.Application.WorkPatterns.Queries.GetWorkPattern.GetWorkPatternHandlerTests" method="HandleShouldThrowArgumentNullException_WhenCommandIsNotSet" time="0.0025529" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Events.EventsTests" time="0.010">
+      <test name="TestUnsEvents" type="PVSDashboard.Tests.Events.EventsTests" method="TestUnsEvents" time="0.0103376" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="10" passed="10" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Infrastructure.BreakWorkPatternTests" time="0.030">
+      <test name="BreakWorkPatternAsync should return work pattern when user has no absent" type="PVSDashboard.Tests.Infrastructure.BreakWorkPatternTests" method="BreakWorkPatternAsyncShouldReturnWorkPattern_WhenUserHasNoAbsent" time="0.0010868" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should split the work pattern in two and split beginning of the work pattern" type="PVSDashboard.Tests.Infrastructure.BreakWorkPatternTests" method="BreakWorkPatternAsyncShoudSplitThePartIntoTwoAndAlterBegin_WhenUserHasTwoAbsentsInTheSameDay" time="0.0012997" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should return empty list when inserting empty list" type="PVSDashboard.Tests.Infrastructure.BreakWorkPatternTests" method="BreakWorkPatternAsyncShouldReturnEmptyList_WhenInsertingEmptyList" time="0.0006946" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should split the work pattern two and split ending of the work pattern" type="PVSDashboard.Tests.Infrastructure.BreakWorkPatternTests" method="BreakWorkPatternAsyncShoudSplitThePartIntoTwoAndAlterEnd_WhenUserHasTwoAbsentsInTheSameDay" time="0.0013494" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should split beginning of the work pattern when user has a absent" type="PVSDashboard.Tests.Infrastructure.BreakWorkPatternTests" method="BreakWorkPatternAsyncShouldAlterBeginOfPart_WhenUserHasAnAbsent" time="0.0011898" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should split the work pattern in two when user has two overlapping absents" type="PVSDashboard.Tests.Infrastructure.BreakWorkPatternTests" method="BreakWorkPatternAsyncShoudSplitThePartIntoTwo_WhenUserHasTwoOverlappingAbsentsInTheSameDay" time="0.0014943" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should split the work pattern in three when user has two absents" type="PVSDashboard.Tests.Infrastructure.BreakWorkPatternTests" method="BreakWorkPatternAsyncShoudSplitThePartIntoThree_WhenUserHasTwoAbsentsInTheSameDay" time="0.0015884" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should return a empty workPattern when user has day absent" type="PVSDashboard.Tests.Infrastructure.BreakWorkPatternTests" method="BreakWorkPatternAsyncShouldReturnEmptyPart_WhenUserHasDayAbsent" time="0.0011915" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should split the work pattern when user has a absent" type="PVSDashboard.Tests.Infrastructure.BreakWorkPatternTests" method="BreakWorkPatternAsyncShouldSplitThePartIntoTwo_WhenUserHasOneAbsent" time="0.0188299" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should split ending of the work pattern when user has a absent" type="PVSDashboard.Tests.Infrastructure.BreakWorkPatternTests" method="BreakWorkPatternAsyncShouldAlterEndOfPart_WhenUserHasAnAbsent" time="0.0014489" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="6" passed="6" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Infrastructure.CheckIfAbsentSplitTests" time="0.008">
+      <test name="CheckIfAbsentNeedsSplitAsync should return one part" type="PVSDashboard.Tests.Infrastructure.CheckIfAbsentSplitTests" method="CheckIfAbsentNeedsSplit_BeginingIsYesterdayEndsInTwoDaysAsync" time="0.0034093" result="Pass">
+        <traits />
+      </test>
+      <test name="CheckIfAbsentNeedsSplitAsync should return one part" type="PVSDashboard.Tests.Infrastructure.CheckIfAbsentSplitTests" method="CheckIfAbsentNeedsSplit_BeginingIsYesterdayEndsTomorrowAsync" time="0.0008648" result="Pass">
+        <traits />
+      </test>
+      <test name="CheckIfAbsentNeedsSplitAsync should return one part" type="PVSDashboard.Tests.Infrastructure.CheckIfAbsentSplitTests" method="CheckIfAbsentNeedsSplit_BeginingIsYesterdayEndsTodayAsync" time="0.0008217" result="Pass">
+        <traits />
+      </test>
+      <test name="CheckIfAbsentNeedsSplitAsync should return one part" type="PVSDashboard.Tests.Infrastructure.CheckIfAbsentSplitTests" method="CheckIfAbsentNeedsSplit_BeginingIsTodayEndsTodayAsync" time="0.0011364" result="Pass">
+        <traits />
+      </test>
+      <test name="CheckIfAbsentNeedsSplitAsync should return one part" type="PVSDashboard.Tests.Infrastructure.CheckIfAbsentSplitTests" method="CheckIfAbsentNeedsSplit_BeginingTwoDaysEndsTodayAsync" time="0.0009794" result="Pass">
+        <traits />
+      </test>
+      <test name="CheckIfAbsentNeedsSplitAsync should return one part" type="PVSDashboard.Tests.Infrastructure.CheckIfAbsentSplitTests" method="CheckIfAbsentNeedsSplit_BeginingIsTodayEndsTomorrowAsync" time="0.0008141" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="19" passed="19" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" time="0.136">
+      <test name="TestJoinPartsToday - The application should publish 1 parts workToday has to be true testing ending edge" type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="OverLapTodayScheduleAsyncShouldReturnTrueAndOneSchedulesForToday_UserWith2WorkPattern2PartsADay" time="0.0488438" result="Pass">
+        <traits />
+      </test>
+      <test name="DeleteApplicationUser should publish 4 empty payloads" type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="DeleteApplicationUser_ShouldPublish4EmptyPayLoads" time="0.0064561" result="Pass">
+        <traits />
+      </test>
+      <test name="TestShiftLogic - The application publish 0 parts and workToday has to be false - No absents and not inside any WP (Random Variables-3WP,10Parts each,0Absents) " type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="CallListWorkPatternsShouldReturnFalseAndZeroSchedulesForToday_UserWith3WorkPattern2PartsADay" time="0.0067594" result="Pass">
+        <traits />
+      </test>
+      <test name="TestShiftLogic - The application publish 4 parts and workToday has to be false - No absents and 2 WP overlap (Random Variables-3WP,10Parts each,0Absents) " type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="CallListWorkPatternsShouldReturnFalseAndFourSchedulesForToday_UserWith3WorkPattern2PartsADay" time="0.0043069" result="Pass">
+        <traits />
+      </test>
+      <test name="TestShiftLogic - The application publish 0 parts and workToday has to be false - No absents and no Parts Today (Random Variables-3WP,8Parts each,0Absents) " type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="CallListWorkPatternsShouldReturnFalseAndFourSchedulesForToday_UserWith3WorkPattern8PartsADay" time="0.0027714" result="Pass">
+        <traits />
+      </test>
+      <test name="TestShiftLogic - The application publish 0 parts and workToday has to be false - No absents and no Parts in WP (Random Variables-3WP,0Parts each,0Absents) " type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="CallListWorkPatternsShouldReturnFalseAndZeroSchedulesForToday_UserWith3WorkPattern0PartsADay" time="0.0014133" result="Pass">
+        <traits />
+      </test>
+      <test name="TestShiftLogic - The application publish 2 work patterns and workToday has to be true - No absents (Random Variables-3WP,10Parts,0Absents)" type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="CallListWorkPatternsShouldReturnTrueAndTwoSchedulesForToday_UserWith2WorkPattern2PartsADay" time="0.0045787" result="Pass">
+        <traits />
+      </test>
+      <test name="TestJoinPartsToday - The application should publish 1 parts workToday has to be true testing ending edge" type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="OverLapTodayScheduleAsyncShoulTestEgdes_Ending" time="0.0033203" result="Pass">
+        <traits />
+      </test>
+      <test name="TestJoinPartsToday - The application should publish 2 parts workToday has to be true- It has two absents (Random Variables-3WP,10Parts each,2Absents)" type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="OverLapTodayScheduleAsyncShouldReturnTrueAndTwoSchedulesForToday_UserWith2WorkPattern2PartsADay" time="0.0124404" result="Pass">
+        <traits />
+      </test>
+      <test name="Publish Check-In Test - ShouldPublish Two CheckIns,one false and one true" type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="TestCallEachUserAndPublishEveryCheckIn" time="0.0072739" result="Pass">
+        <traits />
+      </test>
+      <test name="Publish Location Test - Should Publish one UserEachLocation" type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="CallPublishLocationAsyncAndPublishLocation" time="0.0049470" result="Pass">
+        <traits />
+      </test>
+      <test name="Test All Edges on AbsentLOGIC" type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="TestEdgesOnAbsentLogic" time="0.0047931" result="Pass">
+        <traits />
+      </test>
+      <test name="TestJoinPartsToday - The application should publish 1 parts workToday has to be true testing ending edge" type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="OverLapTodayScheduleAsyncShoulTestEgdes_Same" time="0.0029544" result="Pass">
+        <traits />
+      </test>
+      <test name="TestJoinPartsToday - The application should publish 1 parts workToday has to be true testing start edge" type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="OverLapTodayScheduleAsyncShoulTestEgdes_Start" time="0.0031094" result="Pass">
+        <traits />
+      </test>
+      <test name="Publish Check-In Test" type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="TestOnTheDeleteApplicationUserAsyncMethod" time="0.0053381" result="Pass">
+        <traits />
+      </test>
+      <test name="TestShiftLogic - The application publish 2 parts and workToday has to be false - No absents (Random Variables-3WP,10Parts each,0Absents) " type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="CallListWorkPatternsShouldReturnFalseAndTwoSchedulesForToday_UserWith3WorkPattern2PartsADay" time="0.0034947" result="Pass">
+        <traits />
+      </test>
+      <test name="TestAbsentLogic - The application should publish 2 parts and workToday has to be true - It has one absent off the part(Random Variables-3WP,10Parts each,1Absents)" type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="CallListWorkPatternsShouldReturnTrueAndTwoSchedulesForToday_UserWith2WorkPattern2PartsADay1Absent" time="0.0035021" result="Pass">
+        <traits />
+      </test>
+      <test name="UltimateHardcoreTEST: The ApplicationUser has 3WP(2 overLap),6 Parts for today (All not sorted, 2 equals, 3 overlaps some kind of value). 6 Absent(All not sorted, 2 equals, 3 overlaps some kind of value)" type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="UltimateHardcoreTEST" time="0.0063531" result="Pass">
+        <traits />
+      </test>
+      <test name="TestAbsentLogic - The application should publish 4 parts and workToday has to be true - It has two absents (Random Variables-3WP,10Parts each,2Absents)" type="PVSDashboard.Tests.Infrastructure.CheckInApplicationUserTests" method="CallListWorkPatternsShouldReturnTrueAndFourSchedulesForToday_UserWith2WorkPattern2PartsADay2Absent" time="0.0035892" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.AbsentRepositoryTests.CreateAbsentsTests" time="1.125">
+      <test name="CreateAbsent should call Exception when input is null" type="PVSDashboard.Tests.Persistance.AbsentRepositoryTests.CreateAbsentsTests" method="CreateAbsentShouldReturnNull_WhenFakeRepositoryIsCalled" time="0.8510932" result="Pass">
+        <traits />
+      </test>
+      <test name="CreateAbsent should be called on AbsentRepository" type="PVSDashboard.Tests.Persistance.AbsentRepositoryTests.CreateAbsentsTests" method="CreateAbsentShouldReturnCreatedUser_WhenRepositoryIsCalled" time="0.1322760" result="Pass">
+        <traits />
+      </test>
+      <test name="CreateAbsent should call Exception when input is null" type="PVSDashboard.Tests.Persistance.AbsentRepositoryTests.CreateAbsentsTests" method="CreateAbsentShouldReturnNull_WhenRepositoryIsCalled" time="0.1419812" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.AbsentRepositoryTests.DeleteAbsentsTests" time="0.712">
+      <test name="DeleteAbsent should be called on AbsentRepository" type="PVSDashboard.Tests.Persistance.AbsentRepositoryTests.DeleteAbsentsTests" method="DeleteAbsentShouldReturnNull_WhenFakeRepositoryIsCalled" time="0.2204473" result="Pass">
+        <traits />
+      </test>
+      <test name="DeleteAbsent should be called on AbsentRepository" type="PVSDashboard.Tests.Persistance.AbsentRepositoryTests.DeleteAbsentsTests" method="DeleteAbsentShouldReturnNullWhenUsingIdNotInDatabase_WhenRepositoryIsCalled" time="0.3135009" result="Pass">
+        <traits />
+      </test>
+      <test name="DeleteAbsent should be called on AbsentRepository" type="PVSDashboard.Tests.Persistance.AbsentRepositoryTests.DeleteAbsentsTests" method="DeleteAbsentShouldReturnDeletedUser_WhenRepositoryIsCalled" time="0.1782772" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.AbsentRepositoryTests.GetAbsentsByIdTests" time="1.586">
+      <test name="GetAbsent should be called on AbsentRepository" type="PVSDashboard.Tests.Persistance.AbsentRepositoryTests.GetAbsentsByIdTests" method="GetAbsentShouldReturnGetdUser_WhenRepositoryIsCalled" time="1.3643916" result="Pass">
+        <traits />
+      </test>
+      <test name="GetAbsent should be called on AbsentRepository" type="PVSDashboard.Tests.Persistance.AbsentRepositoryTests.GetAbsentsByIdTests" method="GetAbsentShouldReturnNullWhenWrongIdIsCalled_WhenRepositoryIsCalled" time="0.2217650" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.AbsentRepositoryTests.GetAbsentsTests" time="0.780">
+      <test name="GetAbsent should be called on AbsentRepository" type="PVSDashboard.Tests.Persistance.AbsentRepositoryTests.GetAbsentsTests" method="GetAbsentShouldReturnGetdUser_WhenRepositoryIsCalled" time="0.3144680" result="Pass">
+        <traits />
+      </test>
+      <test name="GetAbsent should be called on AbsentRepository" type="PVSDashboard.Tests.Persistance.AbsentRepositoryTests.GetAbsentsTests" method="GetAbsentShouldReturnNullWhenWrongIdIsCalled_WhenRepositoryIsCalled" time="0.4653702" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.AbsentRepositoryTests.GetAllAbsentsTests" time="0.375">
+      <test name="GetAllAbsent should be called on AbsentRepository" type="PVSDashboard.Tests.Persistance.AbsentRepositoryTests.GetAllAbsentsTests" method="GetAllAbsentShouldReturnGetAlldUser_WhenRepositoryIsCalled" time="0.3751793" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.AbsentRepositoryTests.UpdateAbsentsTests" time="1.005">
+      <test name="UpdateAbsent should be called on AbsentRepository" type="PVSDashboard.Tests.Persistance.AbsentRepositoryTests.UpdateAbsentsTests" method="UpdateAbsentShouldReturnUpdatedUser_WhenRepositoryIsCalled" time="0.2134527" result="Pass">
+        <traits />
+      </test>
+      <test name="UpdateAbsent should call Exception when input is null" type="PVSDashboard.Tests.Persistance.AbsentRepositoryTests.UpdateAbsentsTests" method="UpdateAbsentShouldReturnNull_WhenRepositoryIsCalled" time="0.2485937" result="Pass">
+        <traits />
+      </test>
+      <test name="UpdateAbsent should be called on AbsentRepository" type="PVSDashboard.Tests.Persistance.AbsentRepositoryTests.UpdateAbsentsTests" method="UpdateAbsentShouldReturnNull_WhenFakeRepositoryIsCalled" time="0.3132314" result="Pass">
+        <traits />
+      </test>
+      <test name="UpdateAbsent should be called on AbsentRepository" type="PVSDashboard.Tests.Persistance.AbsentRepositoryTests.UpdateAbsentsTests" method="UpdateAbsentShouldReturnNullWhenUsingWhrongId_WhenRepositoryIsCalled" time="0.2297510" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.CheckInApplicationUsersTests" time="0.778">
+      <test name="CheckInApplicationUser should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.CheckInApplicationUsersTests" method="CheckInApplicationUserShouldReturnNullWhenUsedIdIsNonExistent_WhenRepositoryIsCalled" time="0.2607413" result="Pass">
+        <traits />
+      </test>
+      <test name="CheckInApplicationUser should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.CheckInApplicationUsersTests" method="CheckInApplicationUserShouldReturnCheckIndUser_WhenRepositoryIsCalled" time="0.2596036" result="Pass">
+        <traits />
+      </test>
+      <test name="CheckInApplicationUser should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.CheckInApplicationUsersTests" method="CheckInApplicationUserShouldReturnNull_WhenFakeRepositoryIsCalled" time="0.2579163" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.CheckOutApplicationUsersTests" time="1.697">
+      <test name="CheckOutApplicationUser should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.CheckOutApplicationUsersTests" method="CheckOutApplicationUserShouldReturnCheckOutdUser_WhenRepositoryIsCalled" time="1.2187131" result="Pass">
+        <traits />
+      </test>
+      <test name="CheckOutApplicationUser should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.CheckOutApplicationUsersTests" method="CheckOutApplicationUserShouldReturnNull_WhenFakeRepositoryIsCalled" time="0.2130180" result="Pass">
+        <traits />
+      </test>
+      <test name="CheckOutApplicationUser should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.CheckOutApplicationUsersTests" method="CheckOutApplicationUserShouldReturnNullWhenUsedIdIsNonExistent_WhenRepositoryIsCalled" time="0.2648110" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.CreateApplicationUsersTests" time="1.862">
+      <test name="CreateApplicationUser should call Exception when input is null" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.CreateApplicationUsersTests" method="CreateApplicationUserShouldReturnNull_WhenRepositoryIsCalled" time="1.0271858" result="Pass">
+        <traits />
+      </test>
+      <test name="CreateApplicationUser should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.CreateApplicationUsersTests" method="CreateApplicationUserShouldReturnNull_WhenFakeRepositoryIsCalled" time="0.1461433" result="Pass">
+        <traits />
+      </test>
+      <test name="CreateApplicationUser should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.CreateApplicationUsersTests" method="CreateApplicationUserShouldReturnErrorWhenTryingToCreateUserWithExistingId_WhenRepositoryIsCalled" time="0.4168834" result="Pass">
+        <traits />
+      </test>
+      <test name="CreateApplicationUser should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.CreateApplicationUsersTests" method="CreateApplicationUserShouldReturnCreatedUser_WhenRepositoryIsCalled" time="0.2720968" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.DeleteApplicationUsersTests" time="2.053">
+      <test name="DeleteApplicationUser should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.DeleteApplicationUsersTests" method="DeleteApplicationUserShouldReturnNullWhenUsingIdNotInDatabase_WhenRepositoryIsCalled" time="1.3975527" result="Pass">
+        <traits />
+      </test>
+      <test name="DeleteApplicationUser should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.DeleteApplicationUsersTests" method="DeleteApplicationUserShouldReturnDeletedUser_WhenRepositoryIsCalled" time="0.3340938" result="Pass">
+        <traits />
+      </test>
+      <test name="DeleteApplicationUser should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.DeleteApplicationUsersTests" method="DeleteApplicationUserShouldReturnNull_WhenFakeRepositoryIsCalled" time="0.3216912" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.GetAllApplicationUsersTests" time="1.087">
+      <test name="GetAllApplicationUser should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.GetAllApplicationUsersTests" method="GetAllApplicationUserShouldReturnGetAlldUser_WhenRepositoryIsCalled" time="1.0869500" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.GetAllLocationsTests" time="0.277">
+      <test name="GetAllLocation should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.GetAllLocationsTests" method="GetAllLocationShouldReturnCreatedUser_WhenRepositoryIsCalled" time="0.2769411" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.GetApplicationUsersTests" time="1.570">
+      <test name="GetApplicationUser should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.GetApplicationUsersTests" method="GetApplicationUserShouldReturnGetdUser_WhenRepositoryIsCalled" time="1.2022508" result="Pass">
+        <traits />
+      </test>
+      <test name="GetApplicationUser should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.GetApplicationUsersTests" method="GetApplicationUserShouldReturnNullWhenWrongIdIsCalled_WhenRepositoryIsCalled" time="0.3676369" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.GetLocationsTests" time="0.811">
+      <test name="GetAllLocations should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.GetLocationsTests" method="GetAllLocationsShouldReturnCreatedUser_WhenRepositoryIsCalled" time="0.3147227" result="Pass">
+        <traits />
+      </test>
+      <test name="GetAllLocations should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.GetLocationsTests" method="GetLocationsShouldReturnUsersInTheSameLocation_WhenRepositoryIsCalled" time="0.4966497" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.UpdateApplicationUsersTests" time="1.522">
+      <test name="UpdateApplicationUser should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.UpdateApplicationUsersTests" method="UpdateApplicationUserShouldReturnUpdatedUser_WhenRepositoryIsCalled" time="0.3800896" result="Pass">
+        <traits />
+      </test>
+      <test name="UpdateApplicationUser should call Exception when input is null" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.UpdateApplicationUsersTests" method="UpdateApplicationUserShouldReturnNull_WhenRepositoryIsCalled" time="0.3691941" result="Pass">
+        <traits />
+      </test>
+      <test name="UpdateApplicationUser should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.UpdateApplicationUsersTests" method="UpdateApplicationUserShouldReturnNull_WhenFakeRepositoryIsCalled" time="0.3922311" result="Pass">
+        <traits />
+      </test>
+      <test name="UpdateApplicationUser should be called on ApplicationUserRepository" type="PVSDashboard.Tests.Persistance.ApplicationUserRepositoryTests.UpdateApplicationUsersTests" method="UpdateApplicationUserShouldReturnNullWhenUsingWhrongId_WhenRepositoryIsCalled" time="0.3809442" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.WorkPatternRepositoryTests.CreateWorkPatternsTests" time="0.798">
+      <test name="CreateWorkPattern should be called on WorkPatternRepository" type="PVSDashboard.Tests.Persistance.WorkPatternRepositoryTests.CreateWorkPatternsTests" method="CreateWorkPatternShouldReturnNull_WhenFakeRepositoryIsCalled" time="0.3161971" result="Pass">
+        <traits />
+      </test>
+      <test name="CreateWorkPattern should call Exception when input is null" type="PVSDashboard.Tests.Persistance.WorkPatternRepositoryTests.CreateWorkPatternsTests" method="CreateWorkPatternShouldReturnNull_WhenRepositoryIsCalled" time="0.2564582" result="Pass">
+        <traits />
+      </test>
+      <test name="CreateWorkPattern should be called on WorkPatternRepository" type="PVSDashboard.Tests.Persistance.WorkPatternRepositoryTests.CreateWorkPatternsTests" method="CreateWorkPatternShouldReturnCreatedUser_WhenRepositoryIsCalled" time="0.2254025" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.WorkPatternRepositoryTests.DeleteWorkPatternsTests" time="0.917">
+      <test name="DeleteWorkPattern should be called on WorkPatternRepository" type="PVSDashboard.Tests.Persistance.WorkPatternRepositoryTests.DeleteWorkPatternsTests" method="DeleteWorkPatternShouldReturnNull_WhenFakeRepositoryIsCalled" time="0.2725929" result="Pass">
+        <traits />
+      </test>
+      <test name="DeleteWorkPattern should be called on WorkPatternRepository" type="PVSDashboard.Tests.Persistance.WorkPatternRepositoryTests.DeleteWorkPatternsTests" method="DeleteWorkPatternShouldReturnNullWhenUsingIdNotInDatabase_WhenRepositoryIsCalled" time="0.2542305" result="Pass">
+        <traits />
+      </test>
+      <test name="DeleteWorkPattern should be called on WorkPatternRepository" type="PVSDashboard.Tests.Persistance.WorkPatternRepositoryTests.DeleteWorkPatternsTests" method="DeleteWorkPatternShouldReturnDeletedUser_WhenRepositoryIsCalled" time="0.3898336" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.WorkPatternRepositoryTests.GetAllWorkPatternsTests" time="1.404">
+      <test name="GetAllWorkPattern should be called on WorkPatternRepository" type="PVSDashboard.Tests.Persistance.WorkPatternRepositoryTests.GetAllWorkPatternsTests" method="GetAllWorkPatternShouldReturnGetAlldUser_WhenRepositoryIsCalled" time="1.4042404" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="2" passed="2" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.WorkPatternRepositoryTests.GetWorkPatternsTests" time="0.557">
+      <test name="GetWorkPattern should be called on WorkPatternRepository" type="PVSDashboard.Tests.Persistance.WorkPatternRepositoryTests.GetWorkPatternsTests" method="GetWorkPatternShouldReturnGetdUser_WhenRepositoryIsCalled" time="0.3039578" result="Pass">
+        <traits />
+      </test>
+      <test name="GetWorkPattern should be called on WorkPatternRepository" type="PVSDashboard.Tests.Persistance.WorkPatternRepositoryTests.GetWorkPatternsTests" method="GetWorkPatternShouldReturnNullWhenWrongIdIsCalled_WhenRepositoryIsCalled" time="0.2531604" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="4" passed="4" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Persistance.WorkPatternRepositoryTests.UpdateWorkPatternsTests" time="1.211">
+      <test name="UpdateWorkPattern should call Exception when input is null" type="PVSDashboard.Tests.Persistance.WorkPatternRepositoryTests.UpdateWorkPatternsTests" method="UpdateWorkPatternShouldReturnNull_WhenRepositoryIsCalled" time="0.6937659" result="Pass">
+        <traits />
+      </test>
+      <test name="UpdateWorkPattern should be called on WorkPatternRepository" type="PVSDashboard.Tests.Persistance.WorkPatternRepositoryTests.UpdateWorkPatternsTests" method="UpdateWorkPatternShouldReturnNull_WhenFakeRepositoryIsCalled" time="0.3187743" result="Pass">
+        <traits />
+      </test>
+      <test name="UpdateWorkPattern should be called on WorkPatternRepository" type="PVSDashboard.Tests.Persistance.WorkPatternRepositoryTests.UpdateWorkPatternsTests" method="UpdateWorkPatternShouldReturnUpdatedUser_WhenRepositoryIsCalled" time="0.1101590" result="Pass">
+        <traits />
+      </test>
+      <test name="UpdateWorkPattern should be called on WorkPatternRepository" type="PVSDashboard.Tests.Persistance.WorkPatternRepositoryTests.UpdateWorkPatternsTests" method="UpdateWorkPatternShouldReturnNullWhenUsingWhrongId_WhenRepositoryIsCalled" time="0.0880833" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="14" passed="14" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Timers.BreakWorkPatternTests" time="0.072">
+      <test name="BreakWorkPatternAsync should split the work pattern two and split ending of the work pattern" type="PVSDashboard.Tests.Timers.BreakWorkPatternTests" method="BreakWorkPatternAsyncShoudSplitThePartIntoTwoAndAlterEnd_WhenUserHasTwoAbsentsInTheSameDay" time="0.0025872" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should return a empty workPattern when user has day absent" type="PVSDashboard.Tests.Timers.BreakWorkPatternTests" method="BreakWorkPatternAsyncShouldReturnEmptyPart_WhenUserHasDayAbsent" time="0.0036294" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should split the work pattern in two when user has two overlapping absents" type="PVSDashboard.Tests.Timers.BreakWorkPatternTests" method="BreakWorkPatternAsyncShoudSplitReturnEmptyList1" time="0.0010746" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should return empty list when inserting empty list" type="PVSDashboard.Tests.Timers.BreakWorkPatternTests" method="BreakWorkPatternAsyncShouldReturnEmptyList_WhenInsertingEmptyList" time="0.0011240" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should split the work pattern in two and split beginning of the work pattern" type="PVSDashboard.Tests.Timers.BreakWorkPatternTests" method="BreakWorkPatternAsyncShoudSplitThePartIntoTwoAndAlterBegin_WhenUserHasTwoAbsentsInTheSameDay" time="0.0017632" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should split the work pattern in two when user has two overlapping absents" type="PVSDashboard.Tests.Timers.BreakWorkPatternTests" method="BreakWorkPatternAsyncShoudSplitThePartIntoTwo_WhenUserHasTwoOverlappingAbsentsInTheSameDay" time="0.0016456" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should split the work pattern when user has a absent" type="PVSDashboard.Tests.Timers.BreakWorkPatternTests" method="BreakWorkPatternAsyncShouldSplitThePartIntoTwo_WhenUserHasOneAbsent" time="0.0014575" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should return work pattern when user has no absent" type="PVSDashboard.Tests.Timers.BreakWorkPatternTests" method="BreakWorkPatternAsyncShouldReturnWorkPattern_WhenUserHasNoAbsent" time="0.0010570" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should split the work pattern in two when user has two overlapping absents" type="PVSDashboard.Tests.Timers.BreakWorkPatternTests" method="BreakWorkPatternAsyncShoudSplitReturnEmptyList" time="0.0009634" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should split beginning of the work pattern when user has a absent" type="PVSDashboard.Tests.Timers.BreakWorkPatternTests" method="BreakWorkPatternAsyncShouldAlterBeginOfPart_WhenUserHasAnAbsent" time="0.0496148" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should split the work pattern in three when user has two absents" type="PVSDashboard.Tests.Timers.BreakWorkPatternTests" method="BreakWorkPatternAsyncShoudSplitThePartIntoThree_WhenUserHasTwoAbsentsInTheSameDay" time="0.0017400" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should split the work pattern in two when user has two overlapping absents" type="PVSDashboard.Tests.Timers.BreakWorkPatternTests" method="BreakWorkPatternAsyncShoudSplitReturnEmptyList2" time="0.0012267" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should split the work pattern in two when user has two overlapping absents" type="PVSDashboard.Tests.Timers.BreakWorkPatternTests" method="BreakWorkPatternAsyncShoudSplitReturnEmptyList3" time="0.0011639" result="Pass">
+        <traits />
+      </test>
+      <test name="BreakWorkPatternAsync should split ending of the work pattern when user has a absent" type="PVSDashboard.Tests.Timers.BreakWorkPatternTests" method="BreakWorkPatternAsyncShouldAlterEndOfPart_WhenUserHasAnAbsent" time="0.0025045" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="6" passed="6" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Timers.CheckAbsentAndOverLapTests" time="0.018">
+      <test name="CheckAbsentAndOverLapAsync should return zero" type="PVSDashboard.Tests.Timers.CheckAbsentAndOverLapTests" method="CheckAbsentAndOverLapAsyncTestingAbsentFullDay_PatternHasFourPartAndOneAbsents" time="0.0071289" result="Pass">
+        <traits />
+      </test>
+      <test name="CheckAbsentAndOverLapAsync should return two parts" type="PVSDashboard.Tests.Timers.CheckAbsentAndOverLapTests" method="CheckAbsentAndOverLapAsyncTestingEdgesAbsents_PatternHasTwiPartAndThreeAbsents" time="0.0037595" result="Pass">
+        <traits />
+      </test>
+      <test name="CheckAbsentAndOverLapAsync should return two parts" type="PVSDashboard.Tests.Timers.CheckAbsentAndOverLapTests" method="CheckAbsentAndOverLapAsyncTestingEdges_PatternHasFivePartAndNoAbsents" time="0.0017840" result="Pass">
+        <traits />
+      </test>
+      <test name="CheckAbsentAndOverLapAsync should return zero" type="PVSDashboard.Tests.Timers.CheckAbsentAndOverLapTests" method="CheckAbsentAndOverLapAsyncTestingInside_PatternHasFourPartAndOneAbsents" time="0.0014584" result="Pass">
+        <traits />
+      </test>
+      <test name="CheckAbsentAndOverLapAsync should return zero parts" type="PVSDashboard.Tests.Timers.CheckAbsentAndOverLapTests" method="CheckAbsentAndOverLapAsyncTestingInside_PatternHasFourPartAndFourAbsents" time="0.0020033" result="Pass">
+        <traits />
+      </test>
+      <test name="CheckAbsentAndOverLapAsync should return two parts" type="PVSDashboard.Tests.Timers.CheckAbsentAndOverLapTests" method="CheckAbsentAndOverLapAsyncTestingInsidePatternsAndOverlaps_PatternHasFourPartAndFourAbsents" time="0.0022468" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="5" passed="5" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Timers.CheckIfInsideWorkPatternTests" time="0.010">
+      <test name=" CheckIfInsideWorkPatternAsync should return True" type="PVSDashboard.Tests.Timers.CheckIfInsideWorkPatternTests" method="CheckIfInsideWorkPatternAsyncTestingPatternStartsTodayEndsTomorrow" time="0.0046808" result="Pass">
+        <traits />
+      </test>
+      <test name=" CheckIfInsideWorkPatternAsync should return False" type="PVSDashboard.Tests.Timers.CheckIfInsideWorkPatternTests" method="CheckIfInsideWorkPatternAsyncTestingPatternStartsYesterdayEndsYesterday" time="0.0014243" result="Pass">
+        <traits />
+      </test>
+      <test name=" CheckIfInsideWorkPatternAsync should return True" type="PVSDashboard.Tests.Timers.CheckIfInsideWorkPatternTests" method="CheckIfInsideWorkPatternAsyncTestingPatternStartsTodayEndsToday" time="0.0010498" result="Pass">
+        <traits />
+      </test>
+      <test name=" CheckIfInsideWorkPatternAsync should return True" type="PVSDashboard.Tests.Timers.CheckIfInsideWorkPatternTests" method="CheckIfInsideWorkPatternAsyncTestingPatternStartsYesterdayEndsToday" time="0.0011729" result="Pass">
+        <traits />
+      </test>
+      <test name=" CheckIfInsideWorkPatternAsync should return False" type="PVSDashboard.Tests.Timers.CheckIfInsideWorkPatternTests" method="CheckIfInsideWorkPatternAsyncTestingPatternStartsTomorrowEndsTomorrow" time="0.0013104" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="9" passed="9" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Timers.FindLowestDelayTests" time="0.032">
+      <test name="FindLowestDelayAsync should set the right delay when the application starts during part" type="PVSDashboard.Tests.Timers.FindLowestDelayTests" method="FindLowestDelayAsyncShouldReturnDelay_AppllicationStartsDuringPart" time="0.0071538" result="Pass">
+        <traits />
+      </test>
+      <test name="FindLowestDelayAsync should set a one week delay" type="PVSDashboard.Tests.Timers.FindLowestDelayTests" method="FindLowestDelayAsyncShouldReturnDelay_ReturnsAWeekDelay" time="0.0031360" result="Pass">
+        <traits />
+      </test>
+      <test name="FindLowestDelayAsync should set the right delay when the application starts almost at midnight" type="PVSDashboard.Tests.Timers.FindLowestDelayTests" method="FindLowestDelayAsyncShouldReturnDelay_AppllicationStartsAlmostAtMidnightPart" time="0.0019504" result="Pass">
+        <traits />
+      </test>
+      <test name="FindLowestDelayAsync should set the right delay when the application starts before the next part" type="PVSDashboard.Tests.Timers.FindLowestDelayTests" method="FindLowestDelayAsyncShouldReturnDelay_AppllicationStartsBeforeNextPart" time="0.0021007" result="Pass">
+        <traits />
+      </test>
+      <test name="FindLowestDelayAsync should set the right delay  when the application starts before the next part plus 24h" type="PVSDashboard.Tests.Timers.FindLowestDelayTests" method="FindLowestDelayAsyncShouldReturnDelay_AppllicationStartsBeforeNextPartPlus24h" time="0.0028950" result="Pass">
+        <traits />
+      </test>
+      <test name="FindLowestDelayAsync should set the right delay when the application starts after today´s part" type="PVSDashboard.Tests.Timers.FindLowestDelayTests" method="FindLowestDelayAsyncShouldReturnDelay_AppllicationStartsAfterTodaysPart" time="0.0018604" result="Pass">
+        <traits />
+      </test>
+      <test name="FindLowestDelayAsync should set the right delay  when the application starts during the next part plus 24h" type="PVSDashboard.Tests.Timers.FindLowestDelayTests" method="FindLowestDelayAsyncShouldReturnDelay_AppllicationStartsDuringPartPlus24h" time="0.0096730" result="Pass">
+        <traits />
+      </test>
+      <test name="FindLowestDelayAsync should set the right delay  when pattern has five ten and tested on edges" type="PVSDashboard.Tests.Timers.FindLowestDelayTests" method="FindLowestDelayAsyncByTestingAllEdges_PatternHasFivePart" time="0.0020716" result="Pass">
+        <traits />
+      </test>
+      <test name="FindLowestDelayAsync should set the right delay  when pattern has one part" type="PVSDashboard.Tests.Timers.FindLowestDelayTests" method="FindLowestDelayAsyncShouldReturnDelay_PatternHasOnlyOnePart" time="0.0009439" result="Pass">
+        <traits />
+      </test>
+    </collection>
+    <collection total="9" passed="9" failed="0" skipped="0" name="Test collection for PVSDashboard.Tests.Timers.OverLapTodayTests" time="0.008">
+      <test name="OverLapTodayTestsAsync should return one part" type="PVSDashboard.Tests.Timers.OverLapTodayTests" method="OverLapTodayTestsAsyncShouldReturnOnePart_TestingEdge8" time="0.0012721" result="Pass">
+        <traits />
+      </test>
+      <test name="OverLapTodayTestsAsync should return one part" type="PVSDashboard.Tests.Timers.OverLapTodayTests" method="OverLapTodayTestsAsyncShouldReturnOnePart_TestingEdge7" time="0.0008213" result="Pass">
+        <traits />
+      </test>
+      <test name="OverLapTodayTestsAsync should return one part" type="PVSDashboard.Tests.Timers.OverLapTodayTests" method="OverLapTodayTestsAsyncShouldReturnOnePart_TestingEdge9" time="0.0009746" result="Pass">
+        <traits />
+      </test>
+      <test name="OverLapTodayTestsAsync should return one part" type="PVSDashboard.Tests.Timers.OverLapTodayTests" method="OverLapTodayTestsAsyncShouldReturnOnePart_TestingEdge3" time="0.0010345" result="Pass">
+        <traits />
+      </test>
+      <test name="OverLapTodayTestsAsync should return one part" type="PVSDashboard.Tests.Timers.OverLapTodayTests" method="OverLapTodayTestsAsyncShouldReturnOnePart_TestingEdge6" time="0.0007496" result="Pass">
+        <traits />
+      </test>
+      <test name="OverLapTodayTestsAsync should return one part" type="PVSDashboard.Tests.Timers.OverLapTodayTests" method="OverLapTodayTestsAsyncShouldReturnOnePart_TestingEdge4" time="0.0007591" result="Pass">
+        <traits />
+      </test>
+      <test name="OverLapTodayTestsAsync should return one part" type="PVSDashboard.Tests.Timers.OverLapTodayTests" method="OverLapTodayTestsAsyncShouldReturnOnePart_TestingEdge2" time="0.0008292" result="Pass">
+        <traits />
+      </test>
+      <test name="OverLapTodayTestsAsync should return one part" type="PVSDashboard.Tests.Timers.OverLapTodayTests" method="OverLapTodayTestsAsyncShouldReturnOnePart_TestingEdge5" time="0.0007698" result="Pass">
+        <traits />
+      </test>
+      <test name="OverLapTodayTestsAsync should return one part" type="PVSDashboard.Tests.Timers.OverLapTodayTests" method="OverLapTodayTestsAsyncShouldReturnOnePart_TestingEdge1" time="0.0007473" result="Pass">
+        <traits />
+      </test>
+    </collection>
+  </assembly>
+</assemblies>
