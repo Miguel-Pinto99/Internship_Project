@@ -1,2 +1,2 @@
-* linguist-vendored
-*.cs linguist-vendored=false
+app/* linguist-documentation=false
+app/* linguist-vendored
