@@ -28,3 +28,17 @@ C:\Users\MPIN\source\repos\Employee_Dashboard\miguel-pvs\TestIEnumerable\obj\Deb
 C:\Users\MPIN\source\repos\Employee_Dashboard\miguel-pvs\TestIEnumerable\obj\Debug\net6.0\TestIEnumerable.pdb
 C:\Users\MPIN\source\repos\Employee_Dashboard\miguel-pvs\TestIEnumerable\obj\Debug\net6.0\TestIEnumerable.genruntimeconfig.cache
 C:\Users\MPIN\source\repos\Employee_Dashboard\miguel-pvs\TestIEnumerable\obj\Debug\net6.0\ref\TestIEnumerable.dll
+C:\Users\AFFIXENGINEERING182\Source\Repos\Internship_Project\miguel-pvs\TestIEnumerable\bin\Debug\net6.0\TestIEnumerable.exe
+C:\Users\AFFIXENGINEERING182\Source\Repos\Internship_Project\miguel-pvs\TestIEnumerable\bin\Debug\net6.0\TestIEnumerable.deps.json
+C:\Users\AFFIXENGINEERING182\Source\Repos\Internship_Project\miguel-pvs\TestIEnumerable\bin\Debug\net6.0\TestIEnumerable.runtimeconfig.json
+C:\Users\AFFIXENGINEERING182\Source\Repos\Internship_Project\miguel-pvs\TestIEnumerable\bin\Debug\net6.0\TestIEnumerable.dll
+C:\Users\AFFIXENGINEERING182\Source\Repos\Internship_Project\miguel-pvs\TestIEnumerable\bin\Debug\net6.0\TestIEnumerable.pdb
+C:\Users\AFFIXENGINEERING182\Source\Repos\Internship_Project\miguel-pvs\TestIEnumerable\obj\Debug\net6.0\TestIEnumerable.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AFFIXENGINEERING182\Source\Repos\Internship_Project\miguel-pvs\TestIEnumerable\obj\Debug\net6.0\TestIEnumerable.AssemblyInfoInputs.cache
+C:\Users\AFFIXENGINEERING182\Source\Repos\Internship_Project\miguel-pvs\TestIEnumerable\obj\Debug\net6.0\TestIEnumerable.AssemblyInfo.cs
+C:\Users\AFFIXENGINEERING182\Source\Repos\Internship_Project\miguel-pvs\TestIEnumerable\obj\Debug\net6.0\TestIEnumerable.csproj.CoreCompileInputs.cache
+C:\Users\AFFIXENGINEERING182\Source\Repos\Internship_Project\miguel-pvs\TestIEnumerable\obj\Debug\net6.0\TestIEnumerable.dll
+C:\Users\AFFIXENGINEERING182\Source\Repos\Internship_Project\miguel-pvs\TestIEnumerable\obj\Debug\net6.0\refint\TestIEnumerable.dll
+C:\Users\AFFIXENGINEERING182\Source\Repos\Internship_Project\miguel-pvs\TestIEnumerable\obj\Debug\net6.0\TestIEnumerable.pdb
+C:\Users\AFFIXENGINEERING182\Source\Repos\Internship_Project\miguel-pvs\TestIEnumerable\obj\Debug\net6.0\TestIEnumerable.genruntimeconfig.cache
+C:\Users\AFFIXENGINEERING182\Source\Repos\Internship_Project\miguel-pvs\TestIEnumerable\obj\Debug\net6.0\ref\TestIEnumerable.dll

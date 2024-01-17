@@ -8130,23 +8130,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MPIN\\.nuget\\packages\\": {},
+    "C:\\Users\\AFFIXENGINEERING182\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MPIN\\source\\repos\\Employee_Dashboard\\miguel-pvs\\PVSDashboard.Tests\\PVSDashboard.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\AFFIXENGINEERING182\\Source\\Repos\\Internship_Project\\miguel-pvs\\PVSDashboard.Tests\\PVSDashboard.Tests.csproj",
       "projectName": "PVSDashboard.Tests",
-      "projectPath": "C:\\Users\\MPIN\\source\\repos\\Employee_Dashboard\\miguel-pvs\\PVSDashboard.Tests\\PVSDashboard.Tests.csproj",
-      "packagesPath": "C:\\Users\\MPIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MPIN\\source\\repos\\Employee_Dashboard\\miguel-pvs\\PVSDashboard.Tests\\obj\\",
+      "projectPath": "C:\\Users\\AFFIXENGINEERING182\\Source\\Repos\\Internship_Project\\miguel-pvs\\PVSDashboard.Tests\\PVSDashboard.Tests.csproj",
+      "packagesPath": "C:\\Users\\AFFIXENGINEERING182\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AFFIXENGINEERING182\\Source\\Repos\\Internship_Project\\miguel-pvs\\PVSDashboard.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\MPIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AFFIXENGINEERING182\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8155,16 +8155,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://pkgs.dev.azure.com/HoppenbrouwersIndustrialIT/_packaging/HoppenbrouwersIndustrialIT/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\MPIN\\source\\repos\\Employee_Dashboard\\miguel-pvs\\Project1\\Project1.csproj": {
-              "projectPath": "C:\\Users\\MPIN\\source\\repos\\Employee_Dashboard\\miguel-pvs\\Project1\\Project1.csproj"
+            "C:\\Users\\AFFIXENGINEERING182\\Source\\Repos\\Internship_Project\\miguel-pvs\\Project1\\Project1.csproj": {
+              "projectPath": "C:\\Users\\AFFIXENGINEERING182\\Source\\Repos\\Internship_Project\\miguel-pvs\\Project1\\Project1.csproj"
             }
           }
         }
@@ -8246,7 +8244,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
