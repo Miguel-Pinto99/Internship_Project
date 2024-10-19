@@ -1,7 +1,3 @@
-# HoppenbrouwersProject
-
-To start the project, first, a docker container with an EMQX MQTT broker should be started. Then start the front-end and back-end and let the application do its magic. 
-
 # Hoppenbrouwers project from Miguel Pinto 2023
 
 ## Description
