@@ -10,10 +10,10 @@ The dashboard shows which employees are currently working, absent and missing. L
 ## Requirements
 
 ```
-- **.NET Core / ASP.NET Core**: Framework for building the API.
-- **Entity Framework Core**: ORM for database access.
-- **Swashbuckle (Swagger)**: For API documentation.
-- **Newtonsoft.Json or System.Text.Json**: For JSON handling.
+- .NET Core / ASP.NET Core: Framework for building the API.
+- Entity Framework Core: ORM for database access.
+- Swashbuckle (Swagger): For API documentation.
+- System.Text.Json: For JSON handling.
 ```
 
 ## Features
