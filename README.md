@@ -7,14 +7,23 @@ Repository which contains my internship project at Hoppenbrouwers. The premise o
 ## Context
 The dashboard shows which employees are currently working, absent and missing. Let's assume worker A needed help building an electric board because he was behind schedule. By checking the dashboard, he would know right away that calling employee B would be pointless because he reported sick and is absent. Conversely, he sees that employee C has already checked in with his company card, so he might be available to give him a hand.
 
-## Used tools/Frameworks:
+## Requirements
+
+```
+- **.NET Core / ASP.NET Core**: Framework for building the API.
+- **Entity Framework Core**: ORM for database access.
+- **Swashbuckle (Swagger)**: For API documentation.
+- **Newtonsoft.Json or System.Text.Json**: For JSON handling.
+```
+
+## Features
 
 ```
 -REST API
--MQTT
+-MQTT broker
 -Unitests
 -mediaR notifications
--SQL
+-SQL database
 ```
 
 ## Deployment
@@ -28,4 +37,4 @@ To run the application, the following tools/libraries are needed:
 
 ## Launch
 
-To start the project, first, a docker container with an EMQX MQTT broker should be started. Then start the front-end and back-end and let the application do its magic. 
+To start the project, first, a docker container with an EMQX MQTT broker should be started. Then start the front-end and back-end using the executable and let the application do its magic. 
