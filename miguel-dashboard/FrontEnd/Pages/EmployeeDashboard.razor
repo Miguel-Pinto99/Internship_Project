@@ -1,0 +1,52 @@
+﻿@page "/employee_dashboard"
+
+<PageTitle>Employee Dashboard</PageTitle>
+
+@using BlazorApp1.Data
+@using BlazorApp1.Infrastructure
+@using BlazorApp1.Model
+@inject WeatherForecastService ForecastService
+@inject UnsService _unsService
+<h1>Employee Dashboard</h1>
+
+@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Checked-In</th>
+                <th>Scheduled to work today</th>
+                <th>Today shift</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var applicationUser in listApplicationUsers)
+            {
+                <tr>
+                    <td>@applicationUser.Id</td>
+                    <td>@applicationUser.Checked_In</td>
+                    <td>@applicationUser.ScheduleWorkToday</td>
+                    <td>@applicationUser.TodayShift</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private WeatherForecast[]? forecasts;
+    public List<ApplicationUser> listApplicationUsers = new List<ApplicationUser>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+        listApplicationUsers = await _unsService.SubscribeBrokerAsync(CancellationToken.None);
+       
+    }
+}
